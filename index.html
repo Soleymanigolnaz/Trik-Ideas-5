@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25+Charted&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(109.6deg, rgba(102, 51, 153, 1) 11.2%, rgba(2, 0, 4, 1) 91.1%);
+            background-repeat: no-repeat;
+            height: 73vh;
+            margin: 100px auto;
+
+            >.box {
+                border-right: 2px solid white;
+                border-left: 2px solid white;
+                width: 30%;
+                height: 20%;
+                margin: 200px auto;
+                margin-top: 5%;
+
+                >div {
+                    color: white;
+                    margin-left: 8%;
+                    font-size: 20px;
+                    font-family: "Josefin Sans", sans-serif;
+                    font-optical-sizing: auto;
+                    font-weight: weight;
+                    font-style: normal;
+                    margin-top: 5%;
+                }
+            }
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: "Jersey 25 Charted", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 80px;
+        }
+
+
+
+        p {
+            color: white;
+            text-align: center;
+            margin-top: 3%;
+            font-family: "Reddit Sans Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            font-size: 18px;
+        }
+
+        input {
+            font-size: large;
+            margin-bottom: 3%;
+            margin-left: 5%;
+            margin-top: 8%;
+            height: 32%;
+            width: 75%;
+
+        }
+
+        button {
+            width: 15%;
+            height: 29%;
+            text-transform: uppercase;
+            transition: .4s;
+            border-radius: 5px;
+            border: white;
+            font-family: "Reddit Sans Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            box-shadow: 0 0 20px #eee;
+
+            &:hover {
+                background-color: yellow;
+            }
+        }
+                  
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h1>ODD OR EVEN</h1>
+        <p>Enter a number : </p>
+        <input type="number" id="number">
+        <button onclick="checkOddOrEven()">Check</button>
+        <div id="output"></div>
+    </div>
+</body>
+<script>
+    function checkOddOrEven() {
+        var input = document.getElementById("number").value;
+        var result = "";
+
+        for (var i = 1; i <= input; i++) {
+            if (i % 2 === 0) {
+                result += i + ' is an <Span Style="color: violet;">even</span><br>';
+            } else {
+                result += i + ' is an <Span Style="color: pink;">odd</span><br>';
+            }
+        }
+
+        document.getElementById("output").innerHTML = result;
+    }
+</script>
+
+</html>
