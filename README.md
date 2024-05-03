@@ -1,6 +1,6 @@
 # Trik-Ideas-5
 Check if a Number is Odd or Even
-- [Demo Project]()
+- [Demo Project](https://soleymanigolnaz.github.io/Trik-Ideas-5/)
 
 - Developed by Golnaz Soleymani Mood
 
