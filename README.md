@@ -1,5 +1,6 @@
 # Trik-Ideas-5
 Check if a Number is Odd or Even
+![Screenshot 2024-05-03 145734](https://github.com/Soleymanigolnaz/Trik-Ideas-5/assets/139486149/22463931-2ca1-4056-a021-631191f532ff)
 - [Demo Project](https://soleymanigolnaz.github.io/Trik-Ideas-5/)
 
 - Developed by Golnaz Soleymani Mood
